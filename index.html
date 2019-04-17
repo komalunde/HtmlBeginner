@@ -6,23 +6,70 @@
 <body>
 
 <!--comment -->
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
 
-<h2>CatPhotoApp</h2>
+<h2 class="red-text">CatPhotoApp</h2>
 <main>
   
   <a href='#footer'>Jump to Button</a>
   
   
-  <a href='#'><img src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."/></a>
+  <a href='#'><img class="smaller-image thick-green-border" src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."/></a>
   
-  <p>Click here to view more  <a href="http://freecatphotoapp.com">cat photos</a></p> 
+  <p>Click here to view more  <a href="#">cat photos</a></p> 
   
-  <p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff. Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched. Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>
+  <!--inline css -->
+  
+  <p style="color:purple;">Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff. Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched. Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>
   <p>Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched. Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff. Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>
   
+  
+  <style>
+  
+  .red-text {
+    color: #20B2AA;
+	}
+ 
+  p {
+    font-size: 16px;
+	font-family:monospace;
+  }
+  
+  h2{
+  font-family:Lobster,monospace;
+  }
+  
+  
+   
+</style>
+
+<style>
+
+  .smaller-image{
+	width: 300px;
+	height: 300px;
+  }
+  .thick-green-border {
+    border-color: green;
+    border-width: 10px;
+    border-style: solid;
+	border-radius:50%;
+
+  }
+  .silver-background{
+   background-color:silver;
+  }
+  #cat-photo-form{
+	background-color:green;
+  }
+</style>
+
+
 </main>
-<div>
-<ul>Things that cat love:
+
+<div class="silver-background">
+<p>Things that cat love:</p>
+<ul>
 	 <li>cat nip</li>
     <li>laser pointers</li>
     <li>lasagna</li>
@@ -36,9 +83,8 @@
 </ol>
 </div>	
 
-<form action ="/Submit-cat-photo">
+<form action ="/Submit-cat-photo" id="cat-photo-form">
 <label>Name<input type="text" placeholder='Cat Photo URL' required /></label>
-
 <label for="Indoor">Indoor <input id="indoor" type="radio" name="indoor-outdoor" checked ></label>
 <label for="Outdoor">Outdoor <input id="outdoor" type="radio" name="indoor-outdoor" checked></label>
 <label for="loving">Loving<input type="checkbox" id="loving" name="personality" checked></label>
@@ -47,9 +93,9 @@
 <button type="Submit">Submit</button>
 </form>
 
-
 <div>
 <footer id='footer'> Copyright Cat Photo App</footer>
 </div>
+
 </body>
 </html>		
